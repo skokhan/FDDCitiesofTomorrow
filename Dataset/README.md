@@ -13,3 +13,4 @@ It includes 3,476 rows with key urban, environmental, and socio-economic indicat
 - **Socio-Economic Factors:** Population density, crime rate, income levels.
 - **Sustainability & Security:** Renewable energy use, disaster risk index.
 - **Target Variable:** Urban Sustainability Score (0-1) indicating a city's overall sustainability.
+
