@@ -21,12 +21,28 @@ The notebook should include:
 
 ### Dataset
 
-**Primary Dataset:** [https://www.kaggle.com/datasets/programmer3/sustainable-urban-planning-and-landscape-dataset](Sustainable Urban Planning & Landscape Dataset – Kaggle)
+**Primary Dataset:** [Sustainable Urban Planning & Landscape Dataset – Kaggle](https://www.kaggle.com/datasets/programmer3/sustainable-urban-planning-and-landscape-dataset).
+
 This dataset provides structured data for exploring sustainability, land use, infrastructure, and city-level environmental indicators - perfect for understanding how cities balance growth and livability.
  
 **Example columns:**
-Green Area %, Urban Density, Transport Infrastructure Score, Renewable Energy Index, Pollution Index, Livability Index
+Green Area %, Urban Density, Transport Infrastructure Score, Renewable Energy Index, Pollution Index, Livability Index.
  
-**Optional Supplementary Sources:**
-World Bank Urban Development Indicators
-UN-Habitat Urban Data Portal
+**Optional Supplementary Sources:** 
+World Bank Urban Development Indicators, UN-Habitat Urban Data Portal.
+
+### Story Prompts
+ 
+Explore questions like:
+* How do green areas relate to pollution or livability across cities?
+* Which cities balance population growth and sustainability best?
+* Can we cluster cities by sustainability maturity using machine learning?
+* What does a “smart, livable city” look like - according to the data?
+
+### Rules
+
+* Use Python or R in Fabric Notebooks;
+* All work must be contained in a single .ipynb file;
+* Cite all data sources clearly;
+* No private or paid datasets;
+* Include markdown explanations and conclusions.
