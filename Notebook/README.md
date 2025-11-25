@@ -1,40 +1,85 @@
-# Exploratory Data Analysis (EDA) with SQL
+# Notebook Overview: The Cities of Tomorrow – Urban Growth & Sustainability
 
-By conducting exploratory data analysis (EDA) using SQL, we formulate and execute queries to analyze SpaceX data and address the following questions:​
+This Notebook was created to explore how modern data science techniques can help us understand, evaluate, and predict the sustainability of future cities. Using a real-world–inspired dataset containing 3,476 observations and 16 urban, environmental, and socio-economic indicators, we walk through a full end-to-end analysis: from data cleaning to predictive modeling.
 
-- Display the names of the unique launch sites in the space mission;​
-- Display 5 records where launch sites begin with the string 'CCA';​
-- Display the total payload mass carried by boosters launched by NASA (CRS);​
-- Display average payload mass carried by booster version F9 v1.1;​
-- List the date when the first succesful landing outcome in ground pad was achieved;​
-- List the names of the boosters which have success in drone ship and have payload mass greater than 4000 but less than 6000;​
-- List the total number of successful and failure mission outcomes;​
-- List the names of the booster_versions which have carried the maximum payload mass;​
-- List the records which will display the month names, failure landing_outcomes in drone ship ,booster versions, launch_site for the months in year 2015;​
-- Rank the count of landing outcomes (such as Failure (drone ship) or Success (ground pad)) between the date 2010-06-04 and 2017-03-20, in descending order.​
+## Why This Matters
 
-# Exploratory Data Analysis (EDA) with Data Visualization
+Cities worldwide are growing at unprecedented rates. Understanding how different urban systems interact and how they impact sustainability is crucial for informed policy-making and responsible planning.
 
-Through exploratory data analysis (EDA) with visualization techniques, we use categorical scatter plots, bar plot, and line plot to examine the data. This helps us identify which attributes correlate with successful landings, extract meaningful patterns and trends, and conduct feature engineering.
+By combining EDA, machine learning, and narrative-driven explanation, this Notebook demonstrates how data science can:
 
-### Categorical Scatter Plots​
+* Diagnose environmental challenges;
+* Support sustainable development goals;
+* Guide infrastructure investment;
+* Anticipate risks and opportunities;
+* Inspire smarter and more equitable urban growth.
 
-- Flight Number vs. Payload Mass;​
-- Flight Number vs. Launch Site;​
-- Payload Mass vs. Launch Site;​
-- Flight Number and Orbit type;​
-- Payload Mass vs. Orbit type.​
+## What This Notebook Does
 
-A scatter plot uses dots to represent values for two different numeric variables. We use categorical scatter plots to identify relationships between different attributes and successful landings.​
+### 1. Data Loading, Cleaning & Preparation
 
-### Bar Plot​
+The analysis begins by importing the dataset `urban_planning_dataset.csv`, followed by:
 
-- Success Rate of Each Orbit Type.​
+* Inspecting its structure, dimensions, and data types;
+* Checking for missing values, duplicates, and anomalies;
+* Identifying variable categories (numerical vs. categorical);
+* Preparing the target variable: Urban Sustainability Score (0–1);
+* Applying standard feature scaling for machine learning models;
+* Ensuring reproducibility with consistent train/test splits.
 
-A bar graph shows a comparison among categories. We use a bar plot to identify which orbits have the highest success rates.​
+This establishes a clean and reliable foundation for further analysis.
 
-### Line Plot​
+### 2. Exploratory Data Analysis (EDA)
 
-- The Launch Success Yearly Trend.​
+A combination of statistical summaries and visualizations is used to understand:
 
-Line plots are helpful for tracking changes over time. We use a line plot to visualize the average launch success trend.​
+* Distribution shapes of key indicators;
+* Correlations between urban features and sustainability outcomes;
+* Relationships among environmental, socio-economic, and spatial attributes;
+* Potential multicollinearity and feature clustering.
+
+The EDA helps uncover meaningful patterns, such as which urban conditions contribute positively or negatively to sustainability.
+
+### 3. Predictive Modeling
+
+Multiple machine learning models are trained and evaluated to estimate the Urban Sustainability Score:
+
+* Linear Regression;
+* Random Forest Regressor;
+* Gradient Boosting Regressor.
+
+Models are assessed using:
+
+* Root Mean Squared Error (RMSE);
+* R² scores;
+* 3-fold cross-validation for robustness;
+* Out-of-sample testing (hold-out test set).
+
+Key findings include:
+
+* Gradient Boosting delivers the strongest performance
+* Random Forest provides excellent explainability via feature importances
+* Several indicators—such as green cover, renewable energy use, and building density—play major roles in predicting sustainability
+
+### 4. Feature Importance & Insight Generation
+
+Using Random Forest feature importances and correlation plots, we highlight the most influential factors. The analysis reveals how:
+
+* Environmental indicators remain the strongest drivers of sustainability;
+* Urban structure (e.g., building density, transport access) significantly influences ecological outcomes;
+* Socio-economic metrics contribute meaningful but secondary improvements.
+
+These insights support data-driven recommendations for more resilient and livable cities.
+
+### 5. Data Storytelling & Documentation
+
+Throughout the Notebook, clear markdown annotations explain:
+
+* Analytical reasoning;
+* Modeling decisions;
+* Interpretation of results;
+* Real-world implications;
+* Limitations and next-steps for future work.
+
+The style emphasizes accessibility for both technical and non-technical audiences.
+
