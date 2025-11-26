@@ -57,9 +57,9 @@ Models are assessed using:
 
 Key findings include:
 
-* Gradient Boosting delivers the strongest performance
-* Random Forest provides excellent explainability via feature importances
-* Several indicators—such as green cover, renewable energy use, and building density—play major roles in predicting sustainability
+* Gradient Boosting delivers the strongest performance;
+* Random Forest provides excellent explainability via feature importances;
+* Several indicators—such as green cover, renewable energy use, and building density—play major roles in predicting sustainability.
 
 ### 4. Feature Importance & Insight Generation
 
