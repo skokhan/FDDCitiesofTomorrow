@@ -63,11 +63,29 @@ Key findings include:
 
 ### 4. Feature Importance & Insight Generation
 
-Using Random Forest feature importances and correlation plots, we highlight the most influential factors. The analysis reveals how:
+The models clearly delineate which factors are most critical for achieving a high Urban Sustainability Score.
 
-* Environmental indicators remain the strongest drivers of sustainability;
-* Urban structure (e.g., building density, transport access) significantly influences ecological outcomes;
-* Socio-economic metrics contribute meaningful but secondary improvements.
+1. Dominance of Environmental & Green Infrastructure
+
+The Urban Sustainability Score is overwhelmingly driven by a small set of high-impact environmental features:
+
+* Green Cover Percentage is the single most important factor, accounting for nearly half of the predictive power in both models;
+* Renewable Energy Usage is the second most critical factor;
+* Carbon Footprint and the Disaster Risk Index follow closely, acting as significant negative constraints on the final score.
+
+2. The Role of Infrastructure and Security
+
+Factors related to urban functionality and safety have a relevant but secondary influence:
+
+* Crime Rate has a measurable negative impact, ranking fifth in importance.
+* Public Transport Access is also influential, but less so than the core environmental and risk factors.
+
+3. Low Impact of Socio-Economic and Basic Land Use Features
+
+Features that are commonly discussed but have minimal predictive importance in these models include:
+
+* Socio-Economic: Average Income and Population Density have negligible impact.
+* Basic Land Use Types: The mere presence of land use types (Commercial, Industrial, Residential, Green Space) contributes almost nothing to the score's prediction. The quantity of green space (green_cover_percentage) is what matters, not the land-use classification itself.
 
 These insights support data-driven recommendations for more resilient and livable cities.
 
