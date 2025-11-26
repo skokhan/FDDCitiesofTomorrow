@@ -59,7 +59,7 @@ Key findings include:
 
 * Gradient Boosting delivers the strongest performance;
 * Random Forest provides excellent explainability via feature importances;
-* Several indicators—such as green cover, renewable energy use, and building density—play major roles in predicting sustainability.
+* Several indicators — such as green cover, renewable energy use, crime rate, and public transport access — play major roles in predicting sustainability.
 
 ### 4. Feature Importance & Insight Generation
 
