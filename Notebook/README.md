@@ -57,7 +57,7 @@ Models are assessed using:
 
 Key findings include:
 
-* Gradient Boosting delivers the strongest performance;
+* Gradient Boosting delivers strong performance;
 * Random Forest provides excellent explainability via feature importances;
 * Several indicators — such as green cover, renewable energy use, crime rate, and public transport access — play major roles in predicting sustainability.
 
