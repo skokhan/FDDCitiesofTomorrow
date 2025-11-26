@@ -47,10 +47,3 @@ Explore questions like:
 * No private or paid datasets;
 * Include markdown explanations and conclusions.
 
-## Tools
-
-### Data Engineering
-
-Data Engineering enables you to design, build, and maintain infrastructures and systems that your organization can use to collect, store, process and analyze large volumes of data.
-
-
